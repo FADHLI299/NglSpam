@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard | Dan Aleko</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    /* Tambahkan gaya untuk info user di pojok kiri atas */
+    .user-info {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 8px 16px;
+      border-radius: 20px;
+      color: white;
+      font-size: 14px;
+      backdrop-filter: blur(5px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .user-info i {
+      margin-right: 6px;
+    }
+    .dashboard-content {
+      text-align: center;
+      margin-top: 60px;
+    }
+    .dashboard-content h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    .logout-btn {
+      background: #ff4d4d;
+      color: white;
+      border: none;
+      padding: 10px 24px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+    .logout-btn:hover {
+      background: #ff1a1a;
+    }
+  </style>
+  <script type="module" src="dashboard.js"></script>
+</head>
+<body>
+  <!-- Akan diisi otomatis oleh JavaScript -->
+  <div class="user-info" id="user-info">
+    <i class='bx bxs-user'></i> Loading...
+  </div>
+
+  <div class="wrapper" style="width: 500px; padding: 40px;">
+    <div class="dashboard-content">
+      <h2>Selamat Datang di Dashboard</h2>
+      <p>Anda berhasil login secara nyata!</p>
+      <button class="logout-btn" id="logout-btn">Logout</button>
+    </div>
+  </div>
+</body>
+</html>
